@@ -49,7 +49,7 @@ module.exports = {
         alias: {
             '@': paths.appSrc, // @ 代表 src 路径
         },
-        extensions: ['.ts', '.js'],
+        extensions: ['.tsx','jsx','.ts', '.js',],
         modules: [
             'node_modules',
             paths.appSrc,
@@ -91,7 +91,7 @@ module.exports = {
                 type: 'asset/resource',
             },
             {
-                test: /\.(t|j)s$/,
+                test: /\.(ts|js|tsx|jsx)$/,
                 include: paths.appSrc,
                 use: {
                     loader: "babel-loader",

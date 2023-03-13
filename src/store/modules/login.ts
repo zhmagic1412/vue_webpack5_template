@@ -1,7 +1,7 @@
 import { Module } from 'vuex';
 import { IGlobalState, ILoginState } from '../types';
 
-export default <Module<ILoginState, IGlobalState>>{
+const store:Module<ILoginState, IGlobalState> = {
     namespaced: true, // 开启命名空间
     state: {
         username: 'ADMIN',//md5加密过的,
@@ -18,3 +18,4 @@ export default <Module<ILoginState, IGlobalState>>{
     },
     actions: {}
 }
+export default store

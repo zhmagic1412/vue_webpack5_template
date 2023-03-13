@@ -1,5 +1,6 @@
 <template>
     <div class="main-content">
+        <Header></Header>
         Welcome!
         <div>
             {{store.state.login.username}}
@@ -15,9 +16,10 @@ import { Images } from "@/assets/images";
 import { defineComponent, onMounted, reactive, toRefs } from "vue";
 import {test} from '@/api/api'
 import {useStore} from 'vuex'
+import Header from "./Header";
 
 export default defineComponent({
-    components:{},
+    components:{Header},
     setup() {
         const state = reactive({
             text:''

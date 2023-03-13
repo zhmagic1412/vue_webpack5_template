@@ -4,5 +4,9 @@ export interface IGlobalState {
 
 // Login
 export interface ILoginState {
-    username: string
+    username: string,
+    token:string,
+    refreshToken:string,
+    idCard:string,
+    tokenType:string
 }

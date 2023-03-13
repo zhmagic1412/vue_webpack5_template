@@ -25,6 +25,7 @@
     "@types/lodash-es": "^4.17.5",
     "@typescript-eslint/eslint-plugin": "^5.1.0",
     "@typescript-eslint/parser": "^5.1.0",
+    "@vue/babel-plugin-jsx": "^1.1.1",
     "@vue/compiler-sfc": "^3.2.20",
     "babel-loader": "^8.2.2",
     "babel-plugin-import": "^1.13.3",

@@ -4,14 +4,16 @@ module.exports = {
             '@babel/preset-env',
             {
                 useBuiltIns: 'usage', // 按需引入 polyfill
-                corejs: 3,
+                corejs: 3
             },
         ],
         [
             "@babel/preset-typescript",
             {
+                isTSX: true,
+                allowNamespaces: true,
                 allExtensions: true, //支持所有文件扩展名
-            },
+            }
         ],
     ],
     plugins: [
@@ -21,6 +23,7 @@ module.exports = {
                 corejs: 3,
             }
         ],
+        ["@vue/babel-plugin-jsx"],
         [
             "import",
             {
